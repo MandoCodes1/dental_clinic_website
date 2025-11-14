@@ -79,19 +79,19 @@ export const footerData = {
     {
       title: "Servicios",
       links: [
-        { text: "Implantes Dentales", href: "/servicios#implantes" },
-        { text: "Cirugía Oral", href: "/servicios#cirugia" },
-        { text: "Alineadores", href: "/servicios#alineadores" },
-        { text: "Odontología Estética", href: "/servicios#estetica" },
+        { text: "Implantes Dentales", href: getPermalink("/servicios#implantes") },
+        { text: "Cirugía Oral", href: getPermalink("/servicios#cirugia") },
+        { text: "Alineadores", href: getPermalink("/servicios#alineadores") },
+        { text: "Odontología Estética", href: getPermalink("/servicios#estetica") },
       ],
     },
     {
       title: "Información",
       links: [
-        { text: "Sobre Mí", href: "/sobre-mi" },
-        { text: "Reseñas", href: "/resenas" },
-        { text: "Galería", href: "/galeria" },
-        { text: "Contacto", href: "/contacto" },
+        { text: "Sobre Mí", href: getPermalink("/sobre-mi") },
+        { text: "Reseñas", href: getPermalink("/resenas") },
+        { text: "Galería", href: getPermalink("/galeria") },
+        { text: "Contacto", href: getPermalink("/contacto") },
       ],
     },
     {
@@ -107,8 +107,8 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: "Términos", href: "/terms" },
-    { text: "Política de Privacidad", href: "/privacy" },
+    { text: "Términos", href: getPermalink("/terms") },
+    { text: "Política de Privacidad", href: getPermalink("/privacy") },
   ],
   socialLinks: [
     {
@@ -131,19 +131,19 @@ export const footerDataEN = {
     {
       title: "Services",
       links: [
-        { text: "Dental Implants", href: "/en/services#implants" },
-        { text: "Oral Surgery", href: "/en/services#surgery" },
-        { text: "Aligners", href: "/en/services#aligners" },
-        { text: "Cosmetic Dentistry", href: "/en/services#cosmetic" },
+        { text: "Dental Implants", href: getPermalink("/en/services#implants") },
+        { text: "Oral Surgery", href: getPermalink("/en/services#surgery") },
+        { text: "Aligners", href: getPermalink("/en/services#aligners") },
+        { text: "Cosmetic Dentistry", href: getPermalink("/en/services#cosmetic") },
       ],
     },
     {
       title: "Information",
       links: [
-        { text: "About", href: "/en/about" },
-        { text: "Reviews", href: "/en/reviews" },
-        { text: "Gallery", href: "/en/gallery" },
-        { text: "Contact", href: "/en/contact" },
+        { text: "About", href: getPermalink("/en/about") },
+        { text: "Reviews", href: getPermalink("/en/reviews") },
+        { text: "Gallery", href: getPermalink("/en/gallery") },
+        { text: "Contact", href: getPermalink("/en/contact") },
       ],
     },
     {
@@ -159,8 +159,8 @@ export const footerDataEN = {
     },
   ],
   secondaryLinks: [
-    { text: "Terms", href: "/en/terms" },
-    { text: "Privacy Policy", href: "/en/privacy" },
+    { text: "Terms", href: getPermalink("/en/terms") },
+    { text: "Privacy Policy", href: getPermalink("/en/privacy") },
   ],
   socialLinks: [
     {
