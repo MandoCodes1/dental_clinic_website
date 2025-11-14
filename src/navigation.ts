@@ -79,10 +79,16 @@ export const footerData = {
     {
       title: "Servicios",
       links: [
-        { text: "Implantes Dentales", href: getPermalink("/servicios#implantes") },
+        {
+          text: "Implantes Dentales",
+          href: getPermalink("/servicios#implantes"),
+        },
         { text: "Cirugía Oral", href: getPermalink("/servicios#cirugia") },
         { text: "Alineadores", href: getPermalink("/servicios#alineadores") },
-        { text: "Odontología Estética", href: getPermalink("/servicios#estetica") },
+        {
+          text: "Odontología Estética",
+          href: getPermalink("/servicios#estetica"),
+        },
       ],
     },
     {
@@ -131,10 +137,16 @@ export const footerDataEN = {
     {
       title: "Services",
       links: [
-        { text: "Dental Implants", href: getPermalink("/en/services#implants") },
+        {
+          text: "Dental Implants",
+          href: getPermalink("/en/services#implants"),
+        },
         { text: "Oral Surgery", href: getPermalink("/en/services#surgery") },
         { text: "Aligners", href: getPermalink("/en/services#aligners") },
-        { text: "Cosmetic Dentistry", href: getPermalink("/en/services#cosmetic") },
+        {
+          text: "Cosmetic Dentistry",
+          href: getPermalink("/en/services#cosmetic"),
+        },
       ],
     },
     {
