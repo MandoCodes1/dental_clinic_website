@@ -9,9 +9,8 @@ const translations = {
 };
 
 export function getLanguageFromURL(pathname: string): Language {
-  // Remove base path if present
-  const pathWithoutBase = pathname.replace(/^\/eugenia-vila/, "");
-  const langMatch = pathWithoutBase.match(/^\/(en)/);
+  // Check if path starts with /en
+  const langMatch = pathname.match(/^\/en(\/|$)/);
   return langMatch ? "en" : "es";
 }
 
@@ -34,11 +33,10 @@ export function useTranslations(lang: Language = "es") {
 }
 
 export function getLocalizedPath(path: string, lang: Language): string {
-  const basePath = "/eugenia-vila";
   if (lang === "en") {
-    return path === "/" ? `${basePath}/en` : `${basePath}/en${path}`;
+    return path === "/" ? "/en" : `/en${path}`;
   }
-  return path === "/" ? basePath : `${basePath}${path}`;
+  return path;
 }
 
 // Route mappings between languages
@@ -68,13 +66,8 @@ const routeMappings: Record<string, Record<string, string>> = {
 };
 
 export function switchLanguagePath(currentPath: string): string {
-  const basePath = "/eugenia-vila";
-
-  // Remove base path if present
-  const pathWithoutBase = currentPath.replace(/^\/eugenia-vila/, "");
-
   // Remove trailing slash for comparison
-  const cleanPath = pathWithoutBase.replace(/\/$/, "") || "/";
+  const cleanPath = currentPath.replace(/\/$/, "") || "/";
 
   // Determine current language
   const currentLang = cleanPath.startsWith("/en") ? "en" : "es";
@@ -85,8 +78,7 @@ export function switchLanguagePath(currentPath: string): string {
   // Check if we have a direct mapping
   if (mapping[cleanPath]) {
     const mappedPath = mapping[cleanPath];
-    // If mapped path is just "/", return only basePath (no trailing slash)
-    return mappedPath === "/" ? basePath : basePath + mappedPath;
+    return mappedPath;
   }
 
   // Handle routes with anchors (like /servicios#implantes)
@@ -94,13 +86,12 @@ export function switchLanguagePath(currentPath: string): string {
     const [path, anchor] = cleanPath.split("#");
     const mappedPath = mapping[path];
     if (mappedPath) {
-      const fullPath = mappedPath === "/" ? basePath : basePath + mappedPath;
-      return `${fullPath}#${anchor}`;
+      return `${mappedPath}#${anchor}`;
     }
   }
 
   // Fallback: if no mapping found, return home page of the other language
-  return currentLang === "en" ? basePath : basePath + "/en";
+  return currentLang === "en" ? "/" : "/en";
 }
 
 export const languages = {
