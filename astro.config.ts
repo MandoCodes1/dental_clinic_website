@@ -11,7 +11,7 @@ import icon from "astro-icon";
 import compress from "astro-compress";
 import type { AstroIntegration } from "astro";
 
-import astrowind from "./vendor/integration";
+import astrowind from "./src/integrations/astrowind";
 
 import {
   readingTimeRemarkPlugin,
@@ -87,7 +87,7 @@ export default defineConfig({
     }),
 
     astrowind({
-      config: "./src/config.yaml",
+      config: "./config.yaml",
     }),
   ],
 

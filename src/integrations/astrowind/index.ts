@@ -6,7 +6,7 @@ import configBuilder, { type Config } from "./utils/configBuilder";
 import loadConfig from "./utils/loadConfig";
 
 export default ({
-  config: _themeConfig = "src/config.yaml",
+  config: _themeConfig = "config.yaml",
 } = {}): AstroIntegration => {
   let cfg: AstroConfig;
   return {

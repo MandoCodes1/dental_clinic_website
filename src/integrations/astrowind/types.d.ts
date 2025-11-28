@@ -6,7 +6,7 @@ declare module "astrowind:config" {
     AppBlogConfig,
     UIConfig,
     AnalyticsConfig,
-  } from "./config";
+  } from "./utils/configBuilder";
 
   export const SITE: SiteConfig;
   export const I18N: I18NConfig;

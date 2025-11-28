@@ -1,4 +1,4 @@
-import reviewsData from "../reviews-data";
+import reviewsData from "../data/reviews";
 
 export interface Review {
   name: string;
