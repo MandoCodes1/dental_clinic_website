@@ -1,33 +1,27 @@
 # Fully Functional Dental Clinic Website
 
-**Live Site**: [https://www.dreugeniavila.com/](https://www.dreugeniavila.com/en/)
+**Live Site**: [dreugeniavila.com](https://www.dreugeniavila.com/en/)
 
 Built a professional website as a side project for a dental clinic in Málaga, Spain, using Astro, TypeScript, and Tailwind CSS.
 
 ## Tech Stack
 
-- **Framework**: Astro 5.0 (static site generation)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Icons**: Astro Icon
-- **Deployment**: Production deployment with custom domain
+- **Framework**: [Astro 5.0](https://astro.build/) (static site generation)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Astro Icon](https://www.astroicon.dev/)
+- **Deployment**: GitHub Actions CI/CD with Cloudflare custom domain
 
 ## Features
 
-- **Internationalization**: Full bilingual support (Spanish/English) with dynamic language switching
-- **Responsive Design**: Mobile-first, optimized for all devices
+- **Internationalization**: Dynamic bilingual support using a custom i18n system
+- **Responsive Design**: Mobile-first, optimized for all devices/screen sizes
 - **SEO Optimized**: Meta tags, structured data, sitemap generation
 - **Performance**: Static site generation for fast load times
 - **Component Architecture**: Modular, reusable component system
-- **Type Safety**: Full TypeScript implementation
-
-## Technical Highlights
-
-- Implemented custom i18n system for bilingual content management
-- Built reusable component library with Astro components
-- Optimized image handling and lazy loading
-- Structured data markup for better search engine visibility
-- Production deployment with custom domain configuration
+- **Type Safety**: Full TypeScript implementation throughout
+- **Image Optimization**: Automatic image optimization and lazy loading
+- **Analytics Ready**: Built-in analytics integration support
 
 ## Project Structure
 
@@ -85,4 +79,4 @@ Built a professional website as a side project for a dental clinic in Málaga, S
 
 ## Acknowledgements
 
-This project is built on the [AstroWind](https://github.com/arthelokyo/astrowind) template by [André B](https://github.com/prototypa). 
+Built on the [AstroWind](https://github.com/arthelokyo/astrowind) template. 
