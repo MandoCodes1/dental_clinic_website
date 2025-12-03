@@ -40,9 +40,9 @@ Built a professional website as a side project for a dental clinic in Málaga, S
 │   │   └── styles/
 │   │       └── tailwind.css
 │   ├── components/
-│   │   ├── common/                 # Shared components (Analytics, Metadata, LanguageSwitcher, etc.)
-│   │   ├── ui/                     # Base UI components (Button, Form, Timeline, etc.)
-│   │   └── widgets/                # Page sections (Header, Footer, Hero, Features, Testimonials, etc.)
+│   │   ├── common/
+│   │   ├── ui/
+│   │   └── widgets/
 │   ├── data/
 │   │   ├── navigation.ts
 │   │   └── reviews.ts
@@ -50,13 +50,13 @@ Built a professional website as a side project for a dental clinic in Málaga, S
 │   │   ├── en.json
 │   │   └── es.json
 │   ├── integrations/
-│   │   └── astrowind/              # AstroWind template customization
+│   │   └── astrowind/
 │   ├── layouts/
 │   │   ├── Layout.astro
 │   │   ├── PageLayout.astro
 │   │   └── MarkdownLayout.astro
 │   ├── pages/
-│   │   ├── en/                     # English routes
+│   │   ├── en/
 │   │   │   ├── index.astro
 │   │   │   ├── ...
 │   │   ├── index.astro
@@ -74,8 +74,8 @@ Built a professional website as a side project for a dental clinic in Málaga, S
 │   └── robots.txt
 ├── .github/
 │   └── workflows/
-│       ├── deploy.yml              # GitHub Pages deployment pipeline
-│       └── actions.yaml            # CI/CD checks
+│       ├── deploy.yml
+│       └── actions.yaml
 ├── astro.config.ts
 ├── package.json
 └── ...
