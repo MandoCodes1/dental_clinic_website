@@ -1,6 +1,6 @@
 # Dr. Eugenia Vila Dental Clinic Website
 
-**Live Site**: [https://www.dreugeniavila.com/](https://www.dreugeniavila.com/)
+**Live Site**: [https://www.dreugeniavila.com/](https://www.dreugeniavila.com/en/)
 
 A professional bilingual (Spanish/English) website for a dental clinic in Málaga, Spain. Built as a full-stack web development project demonstrating modern frontend practices and production-ready deployment.
 
