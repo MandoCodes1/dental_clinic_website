@@ -85,11 +85,14 @@ dental_clinic_website/
 │   │   └── index.d.ts              # TypeScript type definitions
 │   │
 │   ├── utils/
+│   │   ├── directories.ts          # Directory path utilities
+│   │   ├── frontmatter.ts          # Markdown frontmatter processing
 │   │   ├── i18n.ts                 # Internationalization utilities
-│   │   ├── reviews.ts              # Review processing & filtering
 │   │   ├── images.ts               # Image optimization helpers
+│   │   ├── images-optimization.ts  # Advanced image processing
 │   │   ├── permalinks.ts           # URL generation
-│   │   └── ...                     # Additional utility functions
+│   │   ├── reviews.ts              # Review processing & filtering
+│   │   └── utils.ts                # General utility functions
 │   │
 │   └── env.d.ts                    # Environment type definitions
 │
